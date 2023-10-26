@@ -1,11 +1,11 @@
-# To awaken the beast [Reflex](https://reflex.dev/docs/getting-started/installation/) using Windows 10
+# Wake up the [Reflex](https://reflex.dev/docs/getting-started/installation/) beast in Windows 10
 
-**1. `Python` assuming we have the latest stable version Python 3.12.0 - Oct. 2, 2023 [Python download source](https://www.python.org/downloads/source/)**
+**1. For `Python` assuming we have the latest stable version Python 3.12.0 - Oct. 2, 2023 [Python download source](https://www.python.org/downloads/source/)**
 ```
 PS C:\Windows\system32> python --version
 Python 3.12.0
 ```
-**2. Creating virtual environment [`venv`](https://docs.python.org/3/library/venv.html) from PowerShell by admin.**
+**2. Creating virtual environment [`venv`](https://docs.python.org/3/library/venv.html) by PowerShell admin .**
 ```
 PS C:\PYTHON\python_web\link_bio> python -m venv venvi
 PS C:\PYTHON\python_web\link_bio> ls
@@ -21,7 +21,7 @@ d-----        26/10/2023     16:03                venvi
 
 PS C:\PYTHON\python_web\link_bio>
 ```
-**3. At this point you must have privileges to execute scripts under the Windows shell.**
+**3. At this point you must have privileges to execute scripts under the Windows PowerShell.**
 ```
 PS C:\PYTHON\python_web\link_bio> Set-ExecutionPolicy Unrestricted -Force
 ```
@@ -66,13 +66,13 @@ Successfully installed pip-23.3.1
 **7. Initializing `Reflex` Project**
 ```
 (venvi) PS C:\PYTHON\python_web\link_bio> reflex init
-Info: Overriding config value username with env var USERNAME=tuuser
+Info: Overriding config value username with env var USERNAME=YourUser
 ────────────────────────────────────────────────────────────────────────────────────── Initializing link_bio ───────────────────────────────────────────────────────────────────────────────────────
 Warning: The path to the Node binary could not be found. Please ensure that Node is properly installed and added to your system's PATH environment variable.
 [16:33:14] Initializing the web directory.                                                                                                                                             console.py:81
-Info: Overriding config value username with env var USERNAME=tuuser
+Info: Overriding config value username with env var USERNAME=YourUser
            Initializing the app directory.                                                                                                                                             console.py:81
-Info: Overriding config value username with env var USERNAME=tuuser
+Info: Overriding config value username with env var USERNAME=YourUser
 Success: Initialized link_bio
 (venvi) PS C:\PYTHON\python_web\link_bio>ls
 
