@@ -1,13 +1,13 @@
-# Para iniciar Reflex en windows 10
+# To awaken the beast [Reflex](https://reflex.dev/docs/getting-started/installation/) using Windows 10
 
-**1 Instalar Python, he instalado la última estable Python 3.12.0 - Oct. 2, 2023, desde la web de Python https://www.python.org/downloads/source/**
-
-`PS C:\Windows\system32> python --version
-Python 3.12.0´
-
-**2 Instalar entorno vitual con venv, desde la terminal PowerShell en modo admin. Lo llamo venvi**
-
-`PS C:\PYTHON\python_web\link_bio> python -m venv venvi
+**1. `Python` assuming we have the latest stable version Python 3.12.0 - Oct. 2, 2023 [Python download source](https://www.python.org/downloads/source/)**
+```
+PS C:\Windows\system32> python --version
+Python 3.12.0
+```
+**2. Creating virtual environment [`venv`](https://docs.python.org/3/library/venv.html) from PowerShell by admin.**
+```
+PS C:\PYTHON\python_web\link_bio> python -m venv venvi
 PS C:\PYTHON\python_web\link_bio> ls
 
 
@@ -19,16 +19,20 @@ Mode                 LastWriteTime         Length Name
 d-----        26/10/2023     16:03                venvi
 
 
-PS C:\PYTHON\python_web\link_bio>´
-
-**3 Activar entorno virtual**
-
-`PS C:\PYTHON\python_web\link_bio> .\\venvi\Scripts\Activate.ps1
-(venvi) PS C:\PYTHON\python_web\link_bio>´
-
-**4 Instalar Reflex**
-
-`(venvi) PS C:\PYTHON\python_web\link_bio> pip install reflex
+PS C:\PYTHON\python_web\link_bio>
+```
+**3. At this point you must have privileges to execute scripts under the Windows shell.**
+```
+PS C:\PYTHON\python_web\link_bio> Set-ExecutionPolicy Unrestricted -Force
+```
+**4. Activated virtual environment**
+```
+PS C:\PYTHON\python_web\link_bio> .\\venvi\Scripts\Activate.ps1
+(venvi) PS C:\PYTHON\python_web\link_bio>
+```
+**5. `Reflex` install by pip**
+```
+(venvi) PS C:\PYTHON\python_web\link_bio> pip install reflex
 Collecting reflex
 ...
 
@@ -40,10 +44,10 @@ Successfully installed Mako-1.2.4 MarkupSafe-2.1.3 SQLAlchemy-1.4.41 alembic-1.1
 [notice] A new release of pip is available: 23.2.1 -> 23.3.1
 [notice] To update, run: python.exe -m pip install --upgrade pip
 (venvi) PS C:\PYTHON\python_web\link_bio>´
-
-**5 Actualiar pip (esto solo aplica al entorno virtual en el que estamos)**
-
-`(venvi) PS C:\PYTHON\python_web\link_bio> python.exe -m pip install --upgrade pip
+```
+**6. Update pip by recommendation of notice**
+```
+(venvi) PS C:\PYTHON\python_web\link_bio> python.exe -m pip install --upgrade pip
 Requirement already satisfied: pip in c:\python\python_web\link_bio\venvi\lib\site-packages (23.2.1)
 Collecting pip
   Obtaining dependency information for pip from https://files.pythonhosted.org/packages/47/6a/453160888fab7c6a432a6e25f8afe6256d0d9f2cbd25971021da6491d899/pip-23.3.1-py3-none-any.whl.metadata
@@ -56,11 +60,12 @@ Installing collected packages: pip
     Uninstalling pip-23.2.1:
       Successfully uninstalled pip-23.2.1
 Successfully installed pip-23.3.1
-(venvi) PS C:\PYTHON\python_web\link_bio>´
+(venvi) PS C:\PYTHON\python_web\link_bio>
+```
 
-**6 Iniciar Reflex**
-
-`(venvi) PS C:\PYTHON\python_web\link_bio> reflex init
+**7. Initializing `Reflex` Project**
+```
+(venvi) PS C:\PYTHON\python_web\link_bio> reflex init
 Info: Overriding config value username with env var USERNAME=tuuser
 ────────────────────────────────────────────────────────────────────────────────────── Initializing link_bio ───────────────────────────────────────────────────────────────────────────────────────
 Warning: The path to the Node binary could not be found. Please ensure that Node is properly installed and added to your system's PATH environment variable.
@@ -86,4 +91,5 @@ d-----        26/10/2023     16:33                __pycache__
 -a----        26/10/2023     16:33             71 rxconfig.py
 
 
-(venvi) PS C:\PYTHON\python_web\link_bio>´
+(venvi) PS C:\PYTHON\python_web\link_bio>
+```
