@@ -4,6 +4,6 @@ num = random.randint(0, 1)   # RNGesus will give us a random number that is eith
 print(num)
 
 if num > 0.5:
-  print("1 > 0.5:", 'Cara')
+  print("1 > 0.5:", 'Cara ññññ ó')
 else:
-  print("0 < 0.5:", 'Cruz')
+  print("0 < 0.5:", 'Cruz ññññ ó')
